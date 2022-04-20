@@ -14,7 +14,7 @@ const rootElement = document.getElementById('root');
 render(
   <BrowserRouter>
     <Routes>
-    <Route path="/docs" element={<App />} />
+    <Route path="/doc" element={<App />} />
       <Route path="/reyes" element={<ReyesJennifer />} />
     </Routes>
   </BrowserRouter>,
