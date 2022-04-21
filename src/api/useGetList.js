@@ -20,7 +20,7 @@ const useGetList = () => {
         dispatch({
           type: GET_LIST,
           payload: {
-             data: response.data.data,
+             data: response.data.data.data,
     
           },
         });
