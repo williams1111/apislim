@@ -32,7 +32,7 @@ const  ReyesJenniferTable = ({  data, isLoading }) => {
               <td>{ details || 'N/A'}</td>
               <td>{moment(created_at).format('DD/MM/YYYY')}</td>
               <td>   {moment.utc(created_at).format('HH:mm:ss')}</td>
-           ;
+          
               <td>
                
                 <button
