@@ -5,22 +5,22 @@ import getListReducers from './getListReducers';
 import { GET_LIST, LOADING_STARTS, LOADING_STOPS } from './feedbackTypes';
 
 const useGetList = () => {
-  const [{  data, isLoading }, dispatch] = useReducer(getListReducers, {
-     data: [],
+  const [{  items, isLoading }, dispatch] = useReducer(getListReducers, {
+    items: [],
     isLoading: false,
   });
 
-  const getList = async () => {
+  const getList = async (data) => {
     dispatch({ type: LOADING_STARTS });
     try {
-      const response = await axios.get(`${'https://share-point-tt.herokuapp.com/api/loginDetails?role=2'}`);
+      const response = await axios.post(`${'https://share-point-tt.herokuapp.com/api/loginDetails/all'}`,data);
       if (response.data) {
         console.log(response.data.data);
         toast.info('Success');
         dispatch({
           type: GET_LIST,
           payload: {
-             data: response.data.data,
+            items: response.data.data,
     
           },
         });
@@ -49,7 +49,7 @@ const useGetList = () => {
     }
   };
 
-  return { getList, deleteList,  data, isLoading };
+  return { getList, deleteList,  items, isLoading };
 };
 
 export default useGetList;

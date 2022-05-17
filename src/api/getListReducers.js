@@ -1,7 +1,7 @@
 import { GET_LIST, LOADING_STARTS, LOADING_STOPS } from "./feedbackTypes";
 
 const initialState = {
-   data: [],
+   items: [],
   isLoading: false,
 };
 
@@ -18,7 +18,7 @@ const getListReducers = (state = initialState, action) => {
     case GET_LIST:
       return {
         ...state,
-         data: payload.data,
+         items: payload.items,
         isLoading: false,
       };
 

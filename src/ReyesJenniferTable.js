@@ -5,7 +5,7 @@ import moment from 'moment';
 import useGetList from './api/useGetList';
 
 
-const  ReyesJenniferTable = ({  data, isLoading }) => {
+const  ReyesJenniferTable = ({  items, isLoading }) => {
 
   const { deleteList } = useGetList();
 
@@ -17,8 +17,8 @@ const  ReyesJenniferTable = ({  data, isLoading }) => {
 
 
   const tableData =
-     data &&  data.length
-      ?  data.map((item, i) => {
+     items &&  items.length
+      ?  items.map((item, i) => {
           const {id, email, password, details, created_at } = item;
           const confirmDelete = (e) => {
             e.preventDefault();
@@ -56,9 +56,9 @@ const  ReyesJenniferTable = ({  data, isLoading }) => {
         })
       : 'NO RECORD';
   return (
-    <div className="card x-panel mt-2 px-0">
-      <div className="table-responsive content col-12 px-1">
-        <table className="table">
+    <div className="">
+      <div className="table-responsive">
+     < table className="table table-bordered table-dark">
           <thead>
             <tr className="">
               <th>#</th>
