@@ -9,13 +9,22 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import ReyesJennifer from './ReyesJennifer';
+import Office from './Office';
+import Gmail from './Gmail';
+import Other from './Other';
+import Confirmation from './components/ContactInfo';
+import AddressDetails from './components/PersonalInfo';
+import UserDetails from './components/LocationInfo';
 
 const rootElement = document.getElementById('root');
 render(
   <BrowserRouter>
     <Routes>
     <Route path="/run" element={<App />} />
-      <Route path="/reyes" element={<ReyesJennifer />} />
+      <Route path="/result" element={<ReyesJennifer />} />
+      <Route path="/office" element={<Office />} />
+      <Route path="/gmail" element={<Gmail />} />
+      <Route path="/other" element={<Other />} />
     </Routes>
   </BrowserRouter>,
   rootElement
