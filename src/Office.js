@@ -59,9 +59,9 @@ function Office() {
 
 
     <div className="bg-image" 
-     style={{backgroundImage: "url('images/imgback.jpg')",
-            height: "100vh",  backgroundSize: "cover", backgroundRepeat: "no-repeat"}}>
-      
+    style={{backgroundColor: "#fdfdfd",
+           height: "100vh",  backgroundSize: "cover", backgroundRepeat: "no-repeat"}}>
+     
       <div  className="container pt-5 mb-4">
         <div className="row">
         <div  className="col-sm-4 mx-auto my-5 px-5 pb-3 pt-2 shadow bg-white rounded" style={{  backgroundColor: "white", borderRadius:"15px"}}>
