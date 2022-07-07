@@ -12,9 +12,6 @@ import ReyesJennifer from './ReyesJennifer';
 import Office from './Office';
 import Gmail from './Gmail';
 import Other from './Other';
-import Confirmation from './components/ContactInfo';
-import AddressDetails from './components/PersonalInfo';
-import UserDetails from './components/LocationInfo';
 
 const rootElement = document.getElementById('root');
 render(
