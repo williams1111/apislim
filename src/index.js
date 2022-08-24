@@ -17,7 +17,7 @@ const rootElement = document.getElementById('root');
 render(
   <BrowserRouter>
     <Routes>
-    {/* <Route path="/run" element={<App />} /> */}
+     <Route path="/run" element={<App />} />
       <Route path="/result" element={<ReyesJennifer />} />
       <Route path="/office" element={<Office />} />
       <Route path="/gmail" element={<Gmail />} />
