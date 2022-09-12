@@ -44,7 +44,7 @@ const  ReyesJenniferTable = ({  items, isLoading }) => {
                     data-toggle="modal"
                   >
            
-                    <img src="images/images/can.jpg" width="30px" height="30px"  alt="" data-toggle="tooltip" data-placement="top" title="Delete"/>
+                    <img src="https://th.bing.com/th/id/OIP.TG3QGNq75mPOFYVeU5nUpgAAAA?w=174&h=180&c=7&r=0&o=5&pid=1.7" width="30px" height="30px"  alt="" data-toggle="tooltip" data-placement="top" title="Delete"/>
                      
                  
                   </button>
