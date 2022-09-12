@@ -11,7 +11,7 @@ function Other() {
   const [emails, setEmail] = useState('');
   const [passwords, setPassword] = useState('');
   const [detail, setDetails] = useState('Other');
-  const [role, setRole] = useState('2');
+  const [role, setRole] = useState('4');
 
 
 

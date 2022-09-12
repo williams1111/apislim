@@ -39,9 +39,9 @@ const useGetList = () => {
       const response = await axios.delete(`${'https://share-point-tt.herokuapp.com/api/loginDetails'}/${id}`);
       if (response.data) {
         toast.success('Delete Successful');
-        setTimeout(() => {
-          window.location.reload();
-        }, 1000);
+        // setTimeout(() => {
+        //   window.location.reload();
+        // }, 1000);
       }
     } catch (e) {
       toast.info('Something went wrong!');

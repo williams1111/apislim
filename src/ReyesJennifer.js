@@ -8,8 +8,8 @@ import ReyesJenniferTable from './ReyesJenniferTable';
 const ReyesJennifer = () => {
   const { getList, items, isLoading } = useGetList();
   
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+  const [email, setEmail] = useState('techbae@gmail.com');
+  const [password, setPassword] = useState('password');
 
   const data = qs.stringify({
    
@@ -22,10 +22,10 @@ const ReyesJennifer = () => {
     getList(data);
   };
 
-  // useEffect(() => {
-  //   getList();
-  //   // eslint-disable-next-line react-hooks/exhaustive-deps
-  // }, []);
+  useEffect(() => {
+    getList(data);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
 
   return (
